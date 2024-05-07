@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshwater Use Prediction</title>
+    <style>
+        * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("/web-app/templates/css/open-theatre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+.cntr{
+    background-color: #a15858;
+    position: absolute;
+    height: 200px;
+    width: 525px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.insidediv{
+    margin: 40px;
+    
+}
+.styl{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#btn{
+    background-color: #19dede; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+        </style>
+</head>
+<body>
+    <div class="cntr">
+        <h1>Freshwater Use Prediction</h1>
+        <form action="/predict" method="post" class="insidediv">
+            <!-- <label for="entity">Entity:</label>
+            <input type="text" id="entity" class="styl" name="entity" required><br><br> -->
+            <label for="year">Year:</label>
+            <input type="number" id="year" class="styl" name="year" required><br><br>
+            <button type="submit" id="btn" href="/result.html">Predict</button>
+        </form>
+    </div>
+    
+</body>
+</html>
